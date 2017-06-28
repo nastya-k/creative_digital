@@ -1,0 +1,147 @@
+
+.our-team {
+	height: 820px;
+	background-color: #ebebeb;
+	padding-top: 53px;
+	&__icon {
+	display: flex;
+	justify-content: center;
+	}
+	&__title {
+	margin-bottom: 44px;
+	padding-top: 10px;
+	color: #665f60;
+	}
+	&__slider {
+	height: 488px;
+	margin-left: -14px;
+	}
+	&__slide {
+	margin: 0;
+	}
+	&__item {
+	position: relative;
+	height: 488px;
+	}
+	&__image {
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	}
+	&__background {
+	position: absolute;
+	z-index: 1;
+	top: 134px;
+	}
+	&__social {
+	position: absolute;
+	height: 70px;
+	background-color: #9f9acf;
+	bottom: 0;
+	z-index: 2;
+	}
+	&__name {
+	position: absolute;
+	z-index: 3;
+	color: #a5a1d2;
+	font-size: 24px;
+	top: 274px;
+	left: 50%;
+	transform: translateX(-50%);
+	white-space: nowrap;
+	}
+	&__position {
+	position: absolute;
+	z-index: 3;
+	color: #665f60;
+	font-size: 21px;
+	top: 327px;
+	left: 50%;
+	transform: translateX(-50%);
+	white-space: nowrap;
+	font-family: $font-stack;
+	font-weight: 400;
+	font-style: italic;
+	}
+	&__item--paddingsm {
+	padding-left: 10px;
+	}
+	&__item--paddingxs {
+	padding-left: 0px;
+	}
+}
+
+.links {
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	bottom: 0;
+	z-index: 4;
+	bottom: 8px;
+	left: 50%;
+	transform: translateX(-50%);
+	&--position {
+	margin: 0 4px;
+	}
+}
+
+.link {
+	font-size: 24px;
+	color: #9f9acf;
+	&--wrapper {
+	width: 34px;
+	height: 34px;
+	border-radius: 50%;
+	background-color: #ebebeb;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 7px;
+    box-sizing: border-box;
+	}
+}
+
+.link .fa-behance {
+   font-size: 21px;
+}
+
+.link:hover {
+	color: #00BCD4;
+	text-decoration: none;
+	transition: color 0.1s ease-in-out;
+}
+
+.link:hover .link--wrapper {
+	background-color: white;
+	transition: background 0.1s ease-in-out;
+}
+
+
+.our-team .slick-prev {
+	left: -68px;
+	top: 285px;
+}
+
+.our-team .slick-next {
+	right: -68px;
+	top: 285px;
+}
+
+.our-team .slick-prev:before {
+	content: url(../img/our_team_sliders/left_arrow.png);
+}
+
+.our-team .slick-next:before {
+	content: url(../img/our_team_sliders/right_arrow.png);
+}
+
+.link--linked {
+	padding-bottom: 2px;
+}
+
+.link--facebook {
+	padding-top: 3px;
+}
+

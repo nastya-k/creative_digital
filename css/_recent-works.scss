@@ -1,0 +1,144 @@
+
+.recent_works {
+	background-image: url(../img/3sectionbg.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 1000px;
+	position: relative;
+		@media screen and (max-width: 769px) {
+		height: 750px;
+		}
+		@media screen and (max-width: 425px) {
+		    height: 700px;
+		}
+	&--image {
+	display: flex;
+	justify-content: center;
+	padding-top: 50px;
+	padding-bottom: 24px;
+	margin-right: 25px;
+	}
+	&--title {
+	font-size: 34px;
+	font-weight: 600;
+	padding-bottom: 58px;
+	color: white;
+	font-family: $font-stack;
+		@media screen and (max-width: 769px) {
+			font-size: 20px;
+			padding-bottom: 25px;
+		}
+	}
+	&__slider {
+	overflow-y: scroll;
+	margin: 0 auto;
+		@media screen and (max-width: 425px) {
+			width: 300px;
+		    height: 300px;
+		}
+		@media screen and (min-width: 426px) and (max-width: 768px) {
+			width: 400px;
+			height: 350px;
+		}
+		@media screen and (min-width: 769px) {
+			width: 650px;
+			height: 547px;
+		}
+		@media screen and (min-width: 1170px) {
+			width: 730px;
+		}
+	}
+	&__slides {
+	margin: 0 auto;
+		@media screen and (max-width: 425px) {
+			width: 300px;
+		}
+		@media screen and (min-width: 426px) and (max-width: 768px) {
+			width: 400px;
+		}
+		@media screen and (min-width: 769px) {
+			width: 650px;
+		}
+		@media screen and (min-width: 1170px) {
+			width: 730px;
+		}
+	}  
+	&__bottom {
+	margin-top: 72px;
+	display: flex;
+	justify-content: center;
+	}
+	&__button {
+	border-radius: 0;
+	background-color: transparent;
+	border: 1px solid white;
+	width: 195px;
+	height: 50p;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	font-size: 20px;
+	font-style: italic;
+	font-family: $font-stack;
+	}
+}
+
+
+.slick-prev:before {
+	content: url(../img/interface%20-%20arrow%20left.png);
+	opacity: 1;
+}
+
+.slick-next:before {
+	content: url(../img/interface%20-%20arrow%20right.png);
+	opacity: 1;
+}
+
+.slick-next {
+	right: -10%; /* -241px; */
+	top: 260px;
+		@media screen and (max-width: 1024px) {
+		right: -5%;
+		}
+	
+}
+
+.slick-prev {
+	left: -10%; /* -274px; */
+	top: 260px;
+		@media screen and (max-width: 1024px) {
+		left: -5%;
+		}
+}
+
+.slick-dots {
+	bottom: -55px;
+}
+
+.slick-dots li button {
+	padding: 1.5px;
+}
+
+.slick-dots li {
+	margin: 0 1.5px;
+	width: 13px;
+}
+
+.slick-dots li button:before {
+	content: '○';
+	font-size: 20px;
+	color: white;
+	opacity: 1;
+	vertical-align: middle;
+}
+
+.slick-dots li.slick-active button:before {
+	color: white;
+	content: '●';
+	font-size: 20px;
+	opacity: 1;
+}
+

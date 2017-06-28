@@ -1,0 +1,152 @@
+@mixin image_position {
+	left: 50%;
+	transform: translateX(-50%);
+	position: absolute;
+}
+
+
+.about-us {
+	background-color: #fff;
+	&__description {
+	padding-top: 124px;
+	padding-bottom: 120px;
+		@media screen and (max-width: 768px) {
+			padding-top: 50px;
+			padding-bottom: 50px;
+		}
+	}
+	&__wrapper {
+	position: relative;
+	padding-left: 0;
+	height: 555px;
+	background-image: url(../img/DeathtoStock_Wired8.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+		@media screen and (max-width: 768px) {
+		height: 200px;
+		} 
+	}
+	&__hover {
+	top: 13.84%;
+	@include image_position;
+	}
+	&__hover-title {
+	top: 31.11%;
+	@include image_position;
+		@media screen and (max-width: 768px) {
+		top: 60.11%;
+		} 
+	}
+	&__content {
+	padding-top: 73px;
+	line-height: 25px;
+	font-size: 20px;
+	color: #665f60;
+	padding-left: 24px;
+		@media screen and (max-width: 768px) {
+		font-size: 16px;
+		}
+	}
+	&__button {
+	width: 196px;
+	margin-left: 10px;
+	height: 50px;
+	border-radius: 0;
+	border-color: black;
+	font-size: 20px;
+	font-style: italic;
+	color: #7d7a7c;
+	background-color: white;
+	}
+	&__background {
+	position: absolute;
+	}
+}
+
+
+.about-us__content p:first-child {
+	margin-bottom: 45px;
+}
+
+.button-wrapper {
+	padding-top: 55px;
+	display: flex;
+	justify-content: center;
+}
+
+.about-us__button:hover, 
+.about-us__button:active,
+.recent_works__button:hover, 
+.recent_works__button:active {
+	background: rgba(55, 0, 125, 0.61);
+    color: white;
+    border: transparent;
+	transition:  color 0.1s ease-in-out;
+	transition:  background 0.2s ease-in-out;
+	transition: border 0.1s ease-in-out;
+}
+
+.map_form--button:active {
+	background-color: #413b79;
+}
+
+.grid {
+	display: flex;
+}
+
+.grid-item-8 {
+	width: 64.5%;
+}
+
+.grid-item-4 {
+	width: 35.5%;
+}
+
+.grid-item-2 {
+	width: 50%;
+	position: relative;
+	transition: all .2s ease-in-out; 
+}
+
+.about-us__image--1,
+.about-us__image--2,
+.about-us__image--3,
+.about-us__image--4 {
+	height: 400px;
+	position: relative;
+	box-sizing: border-box;
+	padding: 10px;
+}
+
+.about-us__image--1,
+.about-us__image--4 {
+	background-color: #dbdbdb;
+}
+
+.about-us__image--5 {
+	background-image: url(../img/image5.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 800px;
+	position: relative;
+	box-sizing: border-box;
+	padding: 10px;
+}
+
+.about-us__image--1-1 {
+	top: 25%;
+	@include image_position; 
+}
+
+.about-us__image--1-2 {
+	bottom: 34.5%;
+	@include image_position;
+}
+
+.about-us__image--5-1 {
+	top: 15%;
+	@include image_position;
+}
+
